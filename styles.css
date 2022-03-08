@@ -1,0 +1,95 @@
+:root {
+  font-family: 'Manrope';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 800;
+  background-color: #1f2632;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.advice_wrapper {
+  background-color: #323a49;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.advice_wrapper .advice_header {
+  color: #52ffa8;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 1rem;
+}
+
+.advice_wrapper .advice_content {
+  color: #cee3e9;
+  font-size: 28px;
+  max-width: 470px;
+}
+
+@media screen and (min-width: 1440px) {
+  .advice_wrapper .advice_divider_mobile {
+    display: none !important;
+  }
+  .advice_wrapper .advice_divider_desktop {
+    display: block !important;
+  }
+  .advice_wrapper {
+    padding: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .advice_wrapper .advice_divider_mobile {
+    display: block;
+  }
+  .advice_wrapper .advice_divider_desktop {
+    display: none;
+  }
+  .advice_wrapper {
+    padding: 1rem;
+  }
+}
+
+.advice_wrapper .advice_divider_desktop, .advice_wrapper .advice_divider_mobile {
+  margin-bottom: 2rem;
+}
+
+.advice_wrapper .advice_button {
+  background-color: #52ffa8;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  place-self: center;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.advice_wrapper .advice_button:hover {
+  -webkit-box-shadow: inset 0 0 1rem #52ffa8, 0 0 2rem #52ffa8;
+          box-shadow: inset 0 0 1rem #52ffa8, 0 0 2rem #52ffa8;
+}
+/*# sourceMappingURL=styles.css.map */
